@@ -1,0 +1,168 @@
+- Lập trình hướng đói tượng
+var: Bien toan cuc: sử dụng được trong 1 block code
+let: bien cuc bo: chỉ sử dụng được ở trong một block
+const: hang so
+*kiểu dữ liệu Nguyên Thủy: là kiểu dữ thiệu thuần nhất(cơ sở) để tạo nên các kỹ tự khác
+String: Chuỗi ký tự "" '' `(in được giá trị trực tiếp trong chuỗi)`
+number: Các điều liên quan đến Kiểu số
+bigint: dữ liệu số nguyên lớn của int
+boolean: kiểu nhị phân trả về true/false
+symbol: 
+underfined: Không xác định
+null: Rỗng
+
+
+- String 
+-ToLowerCase(): là hàm đưa toàn bộ ký tự về viết thường
+
+- Number: javaScript Không chia kiểu dữ liệu mà gộp thành một kiểu dữ liệu là Number
+Phương thức itNaN: Not a Number: Được sử dụng để check số
+- Hàm Tofixed: dùng để làm tròn số
+
+- ép kiểu:
+
+var a = 5: ép Kiểu Ngầm định
+var a = number(5); ép kiểu tường minh
+
+- Câu lệnh điều kiện: 
+if(điều kiện)
+{
+	//block code
+}
+/!\ điều kiện 'ìf' sẽ chạy khi boolean của nó là true
+/!\ Booleam khẳng định: 1, true...
+/!\ boolean phủ định: -0, 0, null, NaN, false, ' '.
+- Câu điều kiện rẽ nhánh:
+if(//dieukien)
+{
+	// block code
+}
+else
+{
+	// block code
+}
+
+- toán tử bậc 3 có điều kiện
+
+operadl ? operand 2 : operand3;
+
+experesstion ? statement for true : statement associtaed with false;
+
+let access = age < 18 ? "chua du" : "da du";
+
+-- while
+
+while(dieu kien)
+{
+	//block code
+	i++; buoc nhay
+}
+
+-- do while
+
+do
+{
+	//block code
+}
+while(dieu kien)
+
+-- for
+
+for(let i = 0; i < Names.lenght; i++)
+{
+	// block code
+}
+
+-- for of
+
+for (let name of name)
+{
+	cosole.log(name);
+}
+
+- Hàm
+
+* Hàm cơ bản
+* Hàm có tham số
+* Hàm tự xây dựng
+function Name() // Hàm cơ bản
+{
+}
+
+function Name(a,b) // Hàm giá trị trả về
+{
+	var c = a*b;
+	return c;
+}
+var tinh = Name(3,4)
+console.log()
+
+- Hàm Confirm
+- là hộp thoại nhận hồi đáp từ phía người dùng
+	* lời gọi hàm: comfirm(<Thông điệp>)
+	* Hàm trả về hồi đáp của người dùng
+		* trả về oke
+
+
+- event: những thứ sảy ra trên một trang web
+	- click chuột
+
+- Lập trình hướng đối tượng
+	- tính toán phức tạp
+	- logic
+	- một ngôn ngữ phát triển rộng rãi hơn các phương thức khác
+	- Đối tượng(object)
+	- Lớp(class): cùng thuộc tính và cùng phương thức
+khai báo
+let dog =
+{	
+	key: "value"
+	dogName: "js"
+}
+
+truy suat 
+let dogColor = dog["color"];
+||
+let docColor = doc.color;
+
+ghi đè
+	dog["color"] = "black"
+Ngoài thuộc tính thì Đối tượng còn có Phương thức
+let dog = 
+{
+	sua: funstion()
+{
+return "GAU GAU";
+}
+}
+
+function Dog(dogName, Weight,color,breed,type)
+{
+this.dogName = dogName;
+this.Weight = Weight
+this.color = color;
+this.breed = breed;
+this.type = type;
+this.sua = function()
+{
+return "GAU GAU"
+}
+}
+
+let dog1 = new Dog("Jaky",0.8,"brown","chihuahua teacup","short hair");
+
+for *** Mảng các đối tượng
+for (var x in Dog)
+{
+	console.log(Dog[x].dogName);
+}
+
+:: Lý thuyết về DOM
+
+
+:: window.onload = funstion ()
+{	
+	funstion_name();
+}
+
+khi chương trình chạy xong sẽ chạy funstion trong window.onload

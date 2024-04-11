@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUYMOD</title>
+    <style>
+        .background {
+            background-image: url("./backGR.png");/* Hình nền phong cảnh */
+            background-size: cover; /* Kích thước hình nền sao cho phủ toàn bộ phần tử */
+            height: 100vh; /* Chiều cao tối đa là chiều cao của cửa sổ trình duyệt */
+            position: relative; /* Định vị tương đối để phần tử con có thể được định vị tuyệt đối */
+            background-image: rgba(112,123,123,0.5);
+            
+        }
+
+        /* CSS cho menu */
+        .menu {
+            position: absolute; /* Định vị tuyệt đối */
+            top: 20px; /* Khoảng cách từ trên xuống */
+            left: 20px; /* Khoảng cách từ trái sang */
+            z-index: 1; /* Đảm bảo menu hiển thị trên background */
+        }
+
+        /* CSS cho phần tử hiển thị thời gian */
+        #clock ,#clock2{
+            position: absolute; /* Định vị tuyệt đối */
+            bottom: 20px; /* Khoảng cách từ dưới lên */
+            right: 20px; /* Khoảng cách từ phải sang */
+            color: white; /* Màu chữ */
+            font-size: 24px; /* Kích thước chữ */
+            z-index: 1; /* Đảm bảo hiển thị trên background */
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="stlye.css">
+<body>
+
+    <!-- Phần tử chứa hình nền phong cảnh -->
+    <div class="background">
+        <!-- Menu -->
+        <menu class="MODE">
+            <ul>
+                <li><a href="Lab1/buoi1.html">Bai 1</a></li>
+                <li><a href="Lab2/lab2_pro/index.html">Bai 2</a></li>
+                <li><a href="Lab3/Lab3_pro/index.html">Bai 3</a></li>
+                <li><a href="Lab4/Lab4_Pro/index.html">Bai 4</a></li>
+                <li><a href="lab5/Lab5.html">Bai 5</a></li>
+                <li><a href="lab6/Lab6.html">Bai 6</a></li>
+            </ul>
+        </menu>
+
+        <!-- Phần tử hiển thị thời gian -->
+        <div id="clock"></div>
+    </div>
+</body>
+</html>

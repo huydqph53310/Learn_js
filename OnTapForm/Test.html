@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style>
+/* Styling for text input */
+input[type="text"] {
+  width: 200px; /* Set the width */
+  padding: 10px; /* Add some padding */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border radius */
+}
+
+/* Styling for submit button */
+input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+  input[type = "submit"], #hang {
+    background-color: #4CAF50; /* Màu nền */
+    border: none; /* Không có đường viền */
+    color: white; /* Màu chữ */
+    padding: 15px 32px; /* Kích thước nút */
+    text-align: center; /* Canh giữa văn bản */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Kích thước chữ */
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Tạo hiệu ứng chuyển đổi */
+    cursor: pointer;
+    border-radius: 8px; /* Bo góc */
+  }
+  input[type = "submit"],#hang:hover {
+    background-color: #45a049; /* Màu nền khi di chuột qua */
+  }
+  input[type="text"] {
+    padding: 10px; /* Kích thước ô input */
+    border: none; /* Không có đường viền */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    transition: box-shadow 0.3s; /* Tạo hiệu ứng chuyển đổi */
+    outline: none; /* Loại bỏ đường viền khi focus */
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"]:focus {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Đổ bóng lớn hơn khi focus */
+  }
+  </style>
+<body>
+    <h1>Thông tin khách hàng</h1>
+    <form action="" onsubmit="return ReadForm()">
+        <label for="">Tên Khách hàng</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="" id="err-name" style="color: red;"></label><br>
+        <label for="">Tuổi</label><br>
+        <input type="text" name="age" id="age"><br>
+        <label for="" id="err-age" style="color: red;"></label><br>
+        <label for="">Địa chỉ</label><br>
+        <input type="text" name="Local" id="Local"><br>
+        <label for="" id="err-Local" style="color: red;"></label><br>
+        <label for="">Email</label><br>
+        <input type="text" name="Email" id="Email"><br>
+        <label for="" id="err-Email" style="color: red;"></label><br>
+        <label for="">Số điện thoại</label><br>
+        <input type="text" name="Phone" id="Phone"><br>
+        <label for="" id="err-Phone" style="color: red;"></label><br>
+        <select name="hang" id="hang" oninput="ThanhTien()">
+            <option value="27000000">iphone 14 Pro Max</option>
+            <option value="32000000">iphone 14 Pro Max</option>
+            <option value="17000000">iphone 13 Pro Max</option>
+            <option value="15000000">iphone 12 Pro Max</option>
+            <option value="10000000">iphone 11 Pro Max</option>
+        </select><br>
+        <input type="radio" id="Ship" name="Ship" value="0" class = "Ship" oninput="ThanhTien()">
+        <label for="Ship">Ship Nội Thành</label><br>
+        <input type="radio" id="Ship" name="Ship" value="50000" class = "Ship" oninput="ThanhTien()">
+        <label for="Ship">Ship Ngoại Thành</label><br>
+        <input type="radio" id="Ship" name="Ship" value="200000" class = "Ship" oninput="ThanhTien()">
+        <label for="Ship">Ship Ship Quốc Tế</label><br>
+        <input type="checkbox" id="phukien1" name="phukien" class = "phukien" value = "500000" oninput="ThanhTien()">
+        <label for="phukien">Có Thêm Bộ Sạc</label><br>
+        <input type="checkbox" id="phukien2" name="phukien1" class = "phukien"  value = "200000" oninput="ThanhTien()">
+        <label for="phukien">Có Thêm Tai Nghe</label><br>
+        <input type="checkbox" id="phukien3" name="phukien2"class = "phukien"  value="10000000" oninput="ThanhTien()">
+        <label for="phukien">Bảo hiểm hư hỏng</label><br>
+        <input type="text" id ="Qty" name = "Qty" placeholder="Số lượng" oninput="ThanhTien()"><br>
+         <h1>Tổng Tiền: </h1>
+         <h1 id = "ThanhTien"></h1>
+        <br><input type="submit" onsubmit="return ReadForm()">
+    </form>
+</body>
+<script src="Test.js"></script>
+</html>

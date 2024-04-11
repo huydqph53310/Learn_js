@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Lab6.css">
+<style>
+        .active
+    {
+        display: block !important;
+    }
+    .mytext
+    {
+        display: none;
+    }
+    .tile{
+        font-size: 1.5em;
+        background-color: #ddd;
+        cursor: pointer;
+    }
+    .lab6
+    {
+        width: 90%;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+    }
+    #Bai1
+    {
+        display: flex;
+    }
+    #imgs
+    {
+        width: 100px;
+        height: 100px;
+    }
+    button {
+  background-color: #aaaeaa; /* Màu nền */
+  border: none; /* Không có đường viền */
+  color: rgb(255, 255, 255); /* Màu chữ */
+  padding: 15px 32px; /* Kích thước nút */
+  text-align: center; /* Canh giữa văn bản */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Kích thước chữ */
+  margin: 4px 2px;
+  transition-duration: 0.4s; /* Tạo hiệu ứng chuyển đổi */
+  cursor: pointer;
+  border-radius: 8px; /* Bo góc */
+}
+</style>
+<body>
+   <div class="lab6">
+    <br>
+    <h1 style="border-top: 1px solid black;"> </h1>
+    <h3>Bài 1: Click để hiện text</h3>   
+    <br>
+    <div id="Bai1">
+        <div class="img">
+            <img src="./P3_IMG/HUYDEV.jpg" alt="" id="imgs">
+        </div>
+        <div class="container">
+            <div class="title">Đỗ Quốc Huy</div>
+            <div class="mytext">Code Student: PH53310</div>
+            <br>
+            <div class="title">Quê Quán: </div>
+            <div class="mytext">Hà Nam</div>
+            <br>
+            <div class="title">Chuyên Ngành</div>
+            <div class="mytext">Lập trình Web (BackEnd)</div>
+        </div> 
+    </div>
+    <br>
+    <h1 style="border-top: 1px solid black;"> </h1>
+    <br>
+    <h3>Bài 2: CHơi trò chơi X - O</h3>   
+    <br> <br>
+    <div id="Bai2">
+        <div id="Show"></div>
+        <p id="Show_turn">
+            <input type="text" name="" id="M1">
+            <input type="text" name="" id="M2">
+        <div><button onclick="Check()">Click me</button></div>
+        </p>
+    </div>
+    <br>
+    <h1 style="border-top: 1px solid black;"> </h1>
+    <br>
+    <h3>Bài 3: Tạo Baner di chuyển</h3>  
+    <br> <br>
+    <div id="Bai3">      
+    <div id="Mod_F">
+        <div id="Mod">
+            <img src="./P3_IMG/Anh[1].jpg" alt="" id="img">
+            <p id="Text"></p>
+        </div>
+        <br>
+        <div id="button"></div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <h1 style="border-top: 1px solid black;"> </h1>
+    <br>
+    <h3>Bài 4: click chuot nhanh</h3>  
+    <br> <br>
+    <div id="Bai4">
+        <div id="output"></div>
+        <div id="message" onclick="Click()"></div>
+        <!-- Thêm sự kiện click chuột vào để tạo button mới -->
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="Lab6.js"></script>
+</html>

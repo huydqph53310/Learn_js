@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .lab5
+    {
+        width: 90%;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+    }
+    #Bai1{
+        width: 100%px;
+    }
+    #data_Price
+    {
+        padding: 20px;
+    }
+    input[type = "submit"], #mathang {
+  background-color: #4CAF50; /* Màu nền */
+  border: none; /* Không có đường viền */
+  color: white; /* Màu chữ */
+  padding: 15px 32px; /* Kích thước nút */
+  text-align: center; /* Canh giữa văn bản */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Kích thước chữ */
+  margin: 4px 2px;
+  transition-duration: 0.4s; /* Tạo hiệu ứng chuyển đổi */
+  cursor: pointer;
+  border-radius: 8px; /* Bo góc */
+}
+input[type = "submit"],#mathang:hover {
+  background-color: #45a049; /* Màu nền khi di chuột qua */
+}
+.MOD {
+  padding: 10px; /* Kích thước ô input */
+  border: none; /* Không có đường viền */
+  border-radius: 8px; /* Bo góc */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  transition: box-shadow 0.3s; /* Tạo hiệu ứng chuyển đổi */
+  outline: none; /* Loại bỏ đường viền khi focus */
+  margin-bottom: 10px;
+}
+
+.MOD:focus {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Đổ bóng lớn hơn khi focus */
+}
+table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .add-to-cart {
+        cursor: pointer;
+    }
+</style>
+<body>
+   <div class="lab5">
+    <div id="Bai1">
+        <h3>Bài 1: Nhập Số lượng in ra giá tiền</h3>
+        <div id="data_Price">
+            <img src="./tải xuống.jpg" alt="" id="img">
+            <p id="Product"></p>
+            <p id="Price"></p>
+            <form action="" onsubmit="return Bai1()">
+                <input type="text" id="Name" placeholder="Họ Và Tên" class="MOD">
+                <br>
+                <label for="Name" id="err-Ten" style="color: red;"></label>
+                <br>
+                <input type="text" id="Tuoi" placeholder="Tuổi" class="MOD">
+                <br>
+                <label for="Tuoi" id="err-Tuoi" style="color: red;"></label>
+                <br>
+                <input type="text" id="Diachi" placeholder="Địa chỉ" class="MOD">
+                <br>
+                <label for="Diachi" id="err-DC" style="color: red;"></label>
+                <br>
+                <input type="text" id="Email" placeholder="Email" class="MOD">
+                <br>
+                <label for="Email" id="err-Email" style="color: red;"></label>
+                <br>
+                <input type="text" id="Phone" placeholder="Số điện thoại" class="MOD">
+                <br>
+                <label for="Phone" id="err-Phone" style="color: red;"></label>
+                <br>
+                <select name="mathang" id="mathang" oninput="TinhTien()">
+                    <option value="27000000">Iphone 14 Pro</option>
+                    <option value="32000000">Iphone 15 Pro</option>
+                </select>
+                <br>
+                <input type="radio" id="Ship" class="SHIP" name="SHIP" value= "0" oninput="TinhTien()">
+                <label for="Ship">Ship Nội Thành</label>
+                <br>
+                <input type="radio" id="Ship1" class="SHIP"  name="SHIP" value= "50000" oninput="TinhTien()">
+                <label for="Ship">Ship Ngoại Thành</label>
+                <br>
+                <input type="radio" id="Ship2" " class="SHIP"  name="SHIP" value= "100000" oninput="TinhTien()">
+                <label for="Ship">Ship Ra Nước Ngoài</label>
+                <br>
+                <input type="checkbox" id="Gift" class="MOD" value= "500000" oninput="TinhTien()">
+                <label for="Gift">Bao Gồm củ sạc</label>
+                <br>
+                <input type="checkbox" id="Gift2"  class="MOD" value= "300000" oninput="TinhTien()">
+                <label for="Gift">Bao Gồm Tai Nghe</label>
+                <br>
+                <input type="checkbox" id="Gift3" class="MOD" value= "1000000" oninput="TinhTien()">
+                <label for="Gift">Mua Bảo hiểm Apple Store</label>
+                <br>
+                <input type="text" id="Qty" placeholder="Số lượng" class="MOD" oninput="TinhTien()">
+                <br>
+                <h1 id="TongTien">Tổng Tiền: </h1>
+                <input type="submit" onsubmit="Bai1()">
+            </form>
+            <div>
+                <label for="name" data_Price="" id="label"></label>
+                <br>
+                <!-- Don Hang -->
+                <p id="Name"></p>
+                <p id="Age"></p>
+                <p id="Local"></p>
+                <p id="Email"></p>
+                <p id="Phone_Num"></p>
+                <p id="Name_SP"></p>
+                <p id="Price"></p>
+            </div>
+        </div>       
+    </div>
+    <div id="Bai2">
+        <h3>Bài 2: Thêm Sửa xóa cửa giỏ hàng</h3>
+        <br>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Tên Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Thêm</th>
+                </tr>
+            </thead>
+            <tbody id="Data">
+                
+            </tbody>
+        </table>
+        <br>
+        <P style="font-weight: 5px; font-size: 20px; color: rgb(35, 122, 122);">Giỏ Hàng Của Bạn</P>
+        <br>
+        <table id="shopping-cart">
+            <thead>
+                <tr>
+                    <th>Tên Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Items added to the cart will appear here -->
+            </tbody>
+        </table>
+        <div id="total"></div>
+    </div>
+   </div>
+</body>
+<script src="lab5.js"></script>
+</html>

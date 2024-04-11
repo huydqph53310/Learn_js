@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bai2_test, #report
+{
+    width: 80%;
+    margin: auto;
+    color: rgb(65, 189, 148);
+    height: 500px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.HUY{
+    border: none; /* Loại bỏ viền */
+
+}
+.HUY a
+{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px; /* Kích thước padding */
+    background-color: #008CBA; /* Màu nền */
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    border-radius: 5px; /* Độ cong góc */
+    cursor: pointer; /* Hiển thị cursor khi hover */
+}
+/* CSS cho input button */
+input[type="text"] {
+    padding: 10px 20px; /* Kích thước padding */
+    border: 2px solid #4CAF50; /* Độ dày và màu sắc của viền */
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    border-radius: 5px; /* Độ cong góc */
+    cursor: pointer; /* Hiển thị cursor khi hover */
+}
+
+/* CSS cho nút submit */
+input[type="submit"] {
+    padding: 10px 20px; /* Kích thước padding */
+    border: none; /* Loại bỏ viền */
+    background-color: #008CBA; /* Màu nền */
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    border-radius: 5px; /* Độ cong góc */
+    cursor: pointer; /* Hiển thị cursor khi hover */
+}
+
+/* Hiệu ứng hover */
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.HUY a:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+}
+button
+{
+    border: 2px solid #4CAF50; /* Độ dày và màu sắc của viền */
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    border-radius: 5px; /* Độ cong góc */
+    cursor: pointer; /* Hiển thị cursor khi hover */
+}
+button:hover {
+    background-color: #d2a553; /* Màu nền khi di chuột vào */
+}
+
+/* Active effect */
+button:active {
+    background-color: #337c23; /* Màu nền khi click */
+}

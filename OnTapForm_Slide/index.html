@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Css/style.css">
+<body>
+    <div class="form-mod">
+        <form action="" onsubmit="return Render()" style="width: 30%; margin: auto">
+            <label for="">Họ Và Tên</label><br> 
+            <input type="text" id="name" name="name" placeholder="Họ và tên"><br>
+            <label for="name" id="err-name" style="color: red;"></label><br>
+
+            <label for="">Tuổi</label><br>
+            <input type="text" id="age" name="age" placeholder="Tuổi"><br>
+            <label for="age" id="err-age" style="color: red;"></label><br>
+
+            <label for="">Địa chỉ</label><br>
+            <input type="text" id="local" name="local" placeholder="Địa chỉ"><br>
+            <label for="local" id="err-local" style="color: red;"></label><br>
+
+            <label for="">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <label for="email" id="err-email" style="color: red;"></label><br>
+
+            <label for="">Số điện thoại</label><br>
+            <input type="text" id="phone" name="phone" placeholder="Số điện thoại"><br>
+            <label for="phone" id="err-phone" style="color: red;"></label><br>
+            <select name="mathang" id="mathang">
+                <option value="27000000">Iphone 14 Pro max</option>
+                <option value="37000000">Iphone 15 Pro max</option>
+                <option value="47000000">Iphone 16 Pro max</option>
+            </select><br>
+            <label for="" style="font-size: 30px; text-align: center;">Sản phẩm đi kèm</label><br>
+            <input type="radio" id="ship" name="ship" value="0"><label for="ship">Ship nội thành</label><br>
+            <input type="radio" id="ship" name="ship" value="200000"><label for="ship">Ship nước ngoài</label><br>
+            <input type="radio" id="ship" name="ship" value="50000"><label for="ship">Ship ngoại thành</label><br>
+            
+            <br>
+            <input type="checkbox" id="phukien" name="phukien" value="500000">
+            <label for="phukien">Kèm Bộ sạc</label><br>
+            <input type="checkbox" id="phukien2" name="phukien2" value="2000000">
+            <label for="phukien">KèmTTai Nghe</label><br>
+            <input type="checkbox" id="phukien3" name="phukien3" value="2000000">
+            <label for="phukien">Bảo hiểm rơi vỡ</label><br>
+            <label for="">Số lượng: </label><input type="text" id="soluong" name="soluong" placeholder="Số lượng"><br>
+            <label for="soluong" id="err-soluong" style="color: red;"></label><br>
+            <input type="submit" id="submit" onsubmit="return Render()">
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

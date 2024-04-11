@@ -1,0 +1,51 @@
+#Show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px; /* Điều chỉnh độ rộng của container */
+    margin: 0 auto; /* Canh giữa container */
+}
+
+button {
+    width: 30%; /* Chiều rộng của mỗi nút là 30% của container */
+    height: 100px;
+    margin-bottom: 10px; /* Khoảng cách giữa các nút */
+    padding: 10px;
+    border: 5px;
+    background-color: #909090; /* Màu nền của nút */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#Mod_F
+{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+#img
+{
+    width: 1200px;
+    height: 380px;
+}
+#output{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+#message
+{
+        text-align: center;
+        padding: 10px;
+        font-size: 1.3em;
+        cursor: pointer; /* Thêm hiệu ứng con trỏ */
+}

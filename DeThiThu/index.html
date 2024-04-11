@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Css/style.css">
+<body>
+    <div id="slide_show">
+        <img src="img/Anh[1].jpg" alt="" id ="image">
+        <br>
+        <div id="button"></div>
+    </div>
+    <div id="form">
+        <form action="" onsubmit="return Render()">
+            <h1>Form Mua Hàng</h1> <br>
+            <input type="text" id="name" name="name" placeholder="Họ tên"><br>
+            <label for="name" id="err-name" style="color: red;"></label><br>
+            <input type="text" id="phone" name="phone" placeholder="Số điện thoại"><br>
+            <label for="phone" id="err-phone" style="color: red;"></label><br>
+            <input type="text" id="local" name="local" placeholder="Địa chỉ"><br>
+            <label for="phone" id="err-local" style="color: red;"></label><br>
+            <input type="text" id="Email" name="Email" placeholder="Email"><br><br>
+            <label for="phone" id="err-email" style="color: red;"></label><br>
+            <h1>Chi Tiết Đơn hàng</h1>
+            <select name="hang" id="hang" oninput="ThanhTien()"> 
+                <option value="30000000"  >Iphone 14 Pro Max</option>
+                <option value="35000000" >Iphone 15 Pro Max</option>
+            </select><br>
+            <label for="Qty">Số lượng: </label>
+            <input type="text" id = "Qty" name = "Qty" oninput="ThanhTien()"><br>
+            <label for="price">Giá: </label>
+            <input type="text" id = "price"><br>
+            <input type="checkbox" id = "phukien0" name = "phukien" value="300000" oninput="ThanhTien()" class="phukien">
+            <label for="phukien">Kèm sạc</label><br>
+            <input type="checkbox" id = "phukien1" name = "phukien1" value="400000" oninput="ThanhTien()" class="phukien">
+            <label for="phukien1">Kèm tai Nghe</label><br>
+            <input type="checkbox" id = "phukien2" name = "phukien2" value="5000000" oninput="ThanhTien()" class="phukien">
+            <label for="phukien2">Mua Apple care</label><br>
+            <input type="radio" id = "ship" name = "ship" oninput="ThanhTien()" value="50000" class="ship">
+            <label for="ship">Ship Nội Thành</label><br>
+            <input type="radio" id = "ship" name = "ship" oninput="ThanhTien()" value="100000" class="ship">
+            <label for="ship">Ship Ngoại Thành</label><br>
+            <h1>Tổng Hóa Đơn</h1><br>
+            <h1 id="ThanhTien"></h1>
+            <input type="submit" value="Đặt mua">
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
